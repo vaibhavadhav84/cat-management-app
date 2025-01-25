@@ -28,8 +28,8 @@ const FetchButtons = ({viewMode, setCatData, setViewMode }) => {
 
   return (
     <div className="buttons-container">
-      <button onClick={fetchRandomCat}  className={viewMode === "table" ? "active" : ""} >Fetch Random Cat (Table View)</button>
-      <button onClick={fetchCatDetails} className={viewMode === "card" ? "active" : ""}>Fetch Cat Details (Card View)</button>
+      <button onClick={fetchRandomCat}  className={viewMode === "table" ? "active" : ""} >Get Random Cat (Table View)</button>
+      <button onClick={fetchCatDetails} className={viewMode === "card" ? "active" : ""}>Get Cat Details (Card View)</button>
     </div>
   );
 };
