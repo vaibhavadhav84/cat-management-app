@@ -35,13 +35,13 @@ button:hover {
 }
 
 .table-container {
-  width: 135%;
-  margin: auto;
+  width: 150%;
+  margin: 0px;
   border-collapse: collapse;
   background: rgb(146, 108, 108);
   position: absolute;
-  left: 130%;
-  top: 68%;
+  left: 124%;
+  top: 74%;
 }
 
 table {
@@ -57,10 +57,11 @@ th, td {
 }
 
 .cat-image {
-  width: 34%;
+  size: 25px;
+  width: 23%;
   border-radius: 10px;
   position: absolute;
-  top: -265%;
+  top: -103%;
 }
 
 .card-container {
