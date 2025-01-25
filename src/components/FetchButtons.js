@@ -4,12 +4,14 @@ import axios from "axios";
 const FetchButtons = ({viewMode, setCatData, setViewMode }) => {
   const fetchRandomCat = async () => {
     try {
-      const response = await axios.get("https://api.thecatapi.com/v1/images/search?has_breeds=1");
-      setCatData(response.data[0]); // Set random cat data
-      setViewMode("table"); // Default to table view
-    } catch (error) {
-      console.error("Error fetching cat data:", error);
-    }
+    const response = await axios.get("https://api.thecatapi.com/v1/images/search?has_breeds=1");
+    const catID = response.data[0].id;
+    const detailsResponse = await axios.get(`https://api.thecatapi.com/v1/images/${catID}`);
+    setCatData(detailsResponse.data); // Set detailed cat data
+    setViewMode("table"); // Switch to card view
+  } catch (error) {
+    console.error("Error fetching cat data:", error);
+  }
   };
 
   const fetchCatDetails = async () => {
