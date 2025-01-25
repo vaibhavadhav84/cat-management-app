@@ -97,3 +97,82 @@ th, td {
 .active {
   background-color: #28a745 !important;
 }
+
+
+/* Mobile Devices (up to 600px) */
+@media only screen and (max-width: 600px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  table {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .cat-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-container {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+/* Tablets (601px to 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  table {
+    width: 85%;
+  }
+
+  .cat-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .card-container {
+    width: 60%;
+  }
+}
+
+/* Large Screens (PC - above 1024px) */
+@media only screen and (min-width: 1025px) {
+  .app-container {
+    padding: 30px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  table {
+    width: 80%;
+  }
+
+  .cat-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card-container {
+    width: 50%;
+  }
+}
